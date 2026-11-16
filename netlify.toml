@@ -1,0 +1,14 @@
+[build]
+  publish = "."
+
+[forms]
+  [forms.contact]
+    name = "contact"
+    subject = "New Portfolio Contact"
+    to = "jonasmogilnicki@gmail.com"
+    success_url = "/success/"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

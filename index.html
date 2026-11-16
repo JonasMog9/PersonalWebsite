@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Sent - Jonas Mogilnicki</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+        .success-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: var(--dark-bg);
+            background-image: radial-gradient(
+                circle at 50% 50%,
+                rgba(67, 97, 238, 0.08) 0%,
+                rgba(10, 17, 40, 0) 70%
+            );
+        }
+
+        .success-icon {
+            font-size: 80px;
+            color: var(--accent);
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+
+        .success-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        .success-message {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 40px;
+            color: var(--text-muted);
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-image: var(--gradient);
+            color: var(--text);
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(67, 97, 238, 0.4);
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .success-title {
+                font-size: 2rem;
+            }
+
+            .success-message {
+                font-size: 1rem;
+            }
+
+            .success-icon {
+                font-size: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <i class="fas fa-check-circle success-icon"></i>
+        <h1 class="success-title">Message Sent Successfully!</h1>
+        <p class="success-message">
+            Thank you for reaching out. I've received your message and will get back to you as soon as possible.
+        </p>
+        <a href="../index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+    </div>
+</body>
+</html>
