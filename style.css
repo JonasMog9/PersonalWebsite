@@ -939,10 +939,13 @@ em {
 }
 
 .project-featured .project-media video {
+  width: calc(100% - 32px);
   height: auto;
   object-fit: contain;
-  margin-block: auto;
-  padding-bottom: 36px;
+  margin: auto 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.8);
 }
 
 .project-featured h3 {
@@ -1577,6 +1580,15 @@ em {
   .project-featured .project-media {
     border-right: 0;
     border-bottom: 1px solid var(--line);
+  }
+
+  .project-featured .project-media video {
+    margin: 0 16px 16px;
+  }
+
+  .project-featured .video-toggle {
+    right: 26px;
+    bottom: 26px;
   }
 
   .skills-grid {
